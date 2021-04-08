@@ -12,11 +12,11 @@ import c_decorator_pattern.better_approach.base.Espresso
 
 fun main() {
 
-    val orderOne = Espresso(listOf(Caramel()))
+    val orderOne = Espresso(listOf(Caramel))
 
     println("orderOne: ${orderOne.calculateAmount()}")
 
-    val orderTwo = Decaf(listOf(Caramel(), Soy()))
+    val orderTwo = Decaf(listOf(Caramel, Soy))
 
     println("orderTwo: ${orderTwo.calculateAmount()}")
 

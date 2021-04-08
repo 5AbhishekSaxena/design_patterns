@@ -8,7 +8,7 @@ import c_decorator_pattern.better_approach.addons.AddOns
  */
 
 abstract class Beverage(
-        private val addOns: Collection<AddOns>
+        private val addOns: Collection<AddOns> = emptyList()
 ) {
 
     abstract val cost: Double
