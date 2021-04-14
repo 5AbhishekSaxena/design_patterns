@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal</OriginalElement>
+  <nodes>
+    <node x="-338.0" y="72.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.Dog</node>
+    <node x="-58.5" y="-9.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal</node>
+    <node x="-107.65384615384613" y="155.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory</node>
+    <node x="-200.99999999999997" y="72.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.Cat</node>
+    <node x="-71.0" y="72.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.Duck</node>
+    <node x="70.0" y="72.0">kotlin.tech.developingdeveloper.d_factory_method_pattern.AnimalFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.AnimalFactory" relationship="DEPENDENCY">
+      <point x="39.39999999999998" y="-15.5" />
+      <point x="30.246153846153845" y="124.0" />
+      <point x="141.5" y="124.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Cat" relationship="CREATE">
+      <point x="-39.400000000000034" y="-15.5" />
+      <point x="-48.553846153846166" y="124.0" />
+      <point x="-145.99999999999997" y="124.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.Dog" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="-279.5" y="47.0" />
+      <point x="-10.5" y="47.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.AnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="141.5" y="47.0" />
+      <point x="-10.5" y="47.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.Cat" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="-145.99999999999997" y="47.0" />
+      <point x="-10.5" y="47.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.Duck" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal" relationship="DEPENDENCY">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Dog" relationship="CREATE">
+      <point x="-78.80000000000004" y="-15.5" />
+      <point x="-87.95384615384617" y="134.0" />
+      <point x="-279.5" y="134.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal" relationship="DEPENDENCY">
+      <point x="78.80000000000001" y="-15.5" />
+      <point x="69.64615384615388" y="134.0" />
+      <point x="223.5" y="134.0" />
+      <point x="223.5" y="47.0" />
+      <point x="-10.5" y="47.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory" target="kotlin.tech.developingdeveloper.d_factory_method_pattern.Duck" relationship="CREATE">
+      <point x="0.0" y="-15.5" />
+      <point x="-9.153846153846132" y="134.0" />
+      <point x="-10.5" y="134.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="true" x="-24.0" y="86.5" />
+  <SelectedNodes>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.Dog</node>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.Animal</node>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.RandomAnimalFactory</node>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.Cat</node>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.Duck</node>
+    <node>kotlin.tech.developingdeveloper.d_factory_method_pattern.AnimalFactory</node>
+  </SelectedNodes>
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
