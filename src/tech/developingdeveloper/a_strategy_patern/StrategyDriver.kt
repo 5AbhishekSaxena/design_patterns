@@ -15,7 +15,7 @@ import tech.developingdeveloper.a_strategy_patern.quack.SimpleQuack
 
 fun main() {
 
-    val cityDuck = tech.developingdeveloper.a_strategy_patern.Duck(
+    val cityDuck = Duck(
             SimpleFly(),
             SimpleQuack(),
             DisplayAsText()
@@ -26,7 +26,7 @@ fun main() {
     cityDuck.quack()
     cityDuck.display()
 
-    val wildDuck = tech.developingdeveloper.a_strategy_patern.Duck(
+    val wildDuck = Duck(
             SimpleFly(),
             SimpleQuack(),
             DisplayAsGraphic()
@@ -37,7 +37,7 @@ fun main() {
     wildDuck.quack()
     wildDuck.display()
 
-    val rubberDuck = tech.developingdeveloper.a_strategy_patern.Duck(
+    val rubberDuck = Duck(
             JetFly(),
             NoQuack(),
             DisplayAsGraphic()
