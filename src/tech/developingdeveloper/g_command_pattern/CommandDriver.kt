@@ -20,4 +20,5 @@ fun main() {
 
     invoker.pressOn()
     invoker.pressOff()
+    invoker.undoAllCommandsAndClearHistory()
 }
