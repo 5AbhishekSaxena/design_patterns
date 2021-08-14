@@ -11,7 +11,7 @@ import tech.developingdeveloper.e_abstract_factory_pattern.windows.WindowsUiKitF
 /**
  * Helper class to create [UiKitFactory], use [createUiKitFactory] method to create an instance based on the type.
  */
-object UiKitFactoryProvider {
+class UiKitFactoryProvider {
 
     /**
      * A static method to create UiKitFactory using [type].

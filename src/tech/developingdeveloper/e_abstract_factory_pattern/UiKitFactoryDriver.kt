@@ -9,12 +9,14 @@ import tech.developingdeveloper.e_abstract_factory_pattern.base.UiKitFactoryProv
 
 fun main() {
 
-    val windowsFactory = UiKitFactoryProvider.createUiKitFactory("Windows")
+    val uiKitFactoryProvider = UiKitFactoryProvider()
+
+    val windowsFactory = uiKitFactoryProvider.createUiKitFactory("Windows")
     val windowsAlertDialog = windowsFactory.createAlertDialog()
     val windowsButton = windowsFactory.createButton()
     println("windowsAlertDialog = $windowsAlertDialog, windowsButton: $windowsButton")
 
-    val macFactory = UiKitFactoryProvider.createUiKitFactory("Mac")
+    val macFactory = uiKitFactoryProvider.createUiKitFactory("Mac")
     val macAlertDialog = macFactory.createAlertDialog()
     val macButton = macFactory.createButton()
     println("macAlertDialog = $macAlertDialog, macButton: $macButton")
