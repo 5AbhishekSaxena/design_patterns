@@ -1,12 +1,11 @@
 package tech.developingdeveloper.e_factory_pattern_pizza
 
 
-class PizzaStore(
-    private val factory: SimplePizzaFactory
-) {
+abstract class PizzaStore {
+    protected abstract fun createPizza(type: String): Pizza
 
     fun orderPizza(type: String): Pizza {
-        val pizza: Pizza = factory.createPizza(type)
+        val pizza: Pizza = createPizza(type)
 
         pizza.also {
             it.prepare()
