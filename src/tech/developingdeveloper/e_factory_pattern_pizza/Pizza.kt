@@ -1,17 +1,18 @@
 package tech.developingdeveloper.e_factory_pattern_pizza
 
-abstract class Pizza {
-    abstract val name: String
-    protected abstract val dough: String
-    protected abstract val sauce: String
-    protected abstract val toppings: List<String>
+import tech.developingdeveloper.e_factory_pattern_pizza.ingredients.Cheese
+import tech.developingdeveloper.e_factory_pattern_pizza.ingredients.Clam
+import tech.developingdeveloper.e_factory_pattern_pizza.ingredients.Dough
+import tech.developingdeveloper.e_factory_pattern_pizza.ingredients.Sauce
 
-    open fun prepare(){
-        println("Preparing $name")
-        println("Tossing dough...")
-        println("Adding sauce...")
-        println("Adding toppings: ${toppings.joinToString()}")
-    }
+abstract class Pizza {
+    var name: String? = null
+    protected var dough: Dough? = null
+    protected var sauce: Sauce? = null
+    protected var cheese: Cheese? = null
+    protected var clam: Clam? = null
+    abstract fun prepare()
+
     open fun bake() {
         println("Bake for 25 minutes at 350")
     }
