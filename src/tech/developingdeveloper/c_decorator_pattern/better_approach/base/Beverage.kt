@@ -10,7 +10,6 @@ import tech.developingdeveloper.c_decorator_pattern.better_approach.addons.AddOn
 abstract class Beverage(
         private val addOns: Collection<AddOns> = emptyList()
 ) {
-
     abstract val cost: Double
 
     fun calculateAmount(): Double {
