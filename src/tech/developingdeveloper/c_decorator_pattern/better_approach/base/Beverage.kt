@@ -14,11 +14,7 @@ abstract class Beverage(
     abstract val cost: Double
 
     fun calculateAmount(): Double {
-        var addOnAmount = 0.0
-        addOns.forEach {
-            addOnAmount += it.cost
-        }
-
+        val addOnAmount = addOns.sumOf { it.cost }
         return cost + addOnAmount
     }
 }
